@@ -81,19 +81,14 @@
             </objects>
             <point key="canvasLocation" x="928.98550724637687" y="93.75"/>
         </scene>
-        <!--View Controller-->
+        <!--URL Details View Controller-->
         <scene sceneID="Wr0-Tm-aVR">
             <objects>
-                <viewController id="eTA-u5-l1M" sceneMemberID="viewController">
+                <viewController id="eTA-u5-l1M" customClass="URLDetailsViewController" customModule="ImageLoadingProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="t6d-wO-gnr">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8df-gI-dNw">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
-                                <viewLayoutGuide key="contentLayoutGuide" id="Syt-OZ-dRL"/>
-                                <viewLayoutGuide key="frameLayoutGuide" id="c0r-5w-qwb"/>
-                            </scrollView>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="d0h-ra-sE0">
                                 <rect key="frame" x="132" y="446" width="150" height="4"/>
                                 <constraints>
@@ -105,14 +100,13 @@
                         <viewLayoutGuide key="safeArea" id="cCS-mO-KWq"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="8df-gI-dNw" firstAttribute="bottom" secondItem="cCS-mO-KWq" secondAttribute="bottom" id="3Qu-Fl-Huq"/>
                             <constraint firstItem="d0h-ra-sE0" firstAttribute="centerX" secondItem="t6d-wO-gnr" secondAttribute="centerX" id="B94-d8-MdM"/>
-                            <constraint firstItem="8df-gI-dNw" firstAttribute="top" secondItem="cCS-mO-KWq" secondAttribute="top" id="Bby-QX-tFj"/>
-                            <constraint firstItem="8df-gI-dNw" firstAttribute="trailing" secondItem="cCS-mO-KWq" secondAttribute="trailing" id="Xk0-hO-yLi"/>
-                            <constraint firstItem="8df-gI-dNw" firstAttribute="leading" secondItem="cCS-mO-KWq" secondAttribute="leading" id="XnK-W5-UJF"/>
                             <constraint firstItem="d0h-ra-sE0" firstAttribute="centerY" secondItem="t6d-wO-gnr" secondAttribute="centerY" id="zJF-rT-SE7"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="progressBar" destination="d0h-ra-sE0" id="Zsf-oz-icL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UCO-s5-MPl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
